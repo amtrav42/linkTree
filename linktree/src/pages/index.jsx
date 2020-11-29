@@ -4,6 +4,7 @@ import UserHandle from '../components/userHandle';
 import ClassicLink from '../components/classicLink';
 import ShowsLink from '../components/showsLink';
 import MusicStyle from '../components/musicStyle';
+import showData from '../data/shows';
 import '../styles/reset.css';
 import '../styles/global.css';
 
@@ -17,7 +18,9 @@ export default function Home() {
       >
         Avid Research Website
       </ClassicLink>
-      <ShowsLink />
+      <ShowsLink
+        showList={showData}
+      />
       <MusicStyle />
     </div>
   );
