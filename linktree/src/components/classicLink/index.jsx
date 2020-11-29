@@ -1,5 +1,17 @@
 import React from 'react';
 
-export default function ClassicLink() {
-  return <div>I am a Classic Link</div>;
+export default function ClassicLink(props) {
+  const {
+    href,
+    children,
+  } = props;
+  return (
+    <a
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      {children}
+    </a>
+  );
 }

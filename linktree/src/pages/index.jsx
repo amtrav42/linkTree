@@ -12,7 +12,11 @@ export default function Home() {
     <div>
       <Avatar />
       <UserHandle />
-      <ClassicLink />
+      <ClassicLink
+        href="https://avidresearch.com.au/"
+      >
+        Avid Research Website
+      </ClassicLink>
       <ShowsLink />
       <MusicStyle />
     </div>
