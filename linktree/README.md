@@ -21,4 +21,10 @@ should work as well
 
 The site will now be running at `http://localhost:8000`!
 
+It is highly probable there will be issues with this site on IE11, and possibly on other older browsers due to support for CSS variables and some of the CSS used in this project
+
+Due to time constraints tests were not implemented, however I would have utilised Unit testing with Jest (https://www.gatsbyjs.com/docs/unit-testing/) and snapshot testing. The first thing I would have tested would have been if on click that the shows list had rendered under the shows link. 
+
+
+
 Please note this site was built on a Windows machine using Node.js v12.14.1
