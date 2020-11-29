@@ -7,21 +7,28 @@ import MusicStyle from '../components/musicStyle';
 import showData from '../data/shows';
 import '../styles/reset.css';
 import '../styles/global.css';
+import pageStyles from './page.module.css';
 
 export default function Home() {
   return (
-    <div>
-      <Avatar />
-      <UserHandle />
-      <ClassicLink
-        href="https://avidresearch.com.au/"
+    <div
+      className={pageStyles.container}
+    >
+      <div
+        className={pageStyles.wrapper}
       >
-        Avid Research Website
-      </ClassicLink>
-      <ShowsLink
-        showList={showData}
-      />
-      <MusicStyle />
+        <Avatar />
+        <UserHandle />
+        <ClassicLink
+          href="https://avidresearch.com.au/"
+        >
+          Avid Research Website
+        </ClassicLink>
+        <ShowsLink
+          showList={showData}
+        />
+        <MusicStyle />
+      </div>
     </div>
   );
 }
