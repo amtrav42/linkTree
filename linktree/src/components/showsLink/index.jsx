@@ -1,5 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ClassicLink from '../classicLink';
 
 export default function ShowsLink() {
-  return <div>I am a Shows Link</div>;
+  const [isExpanded, setIsExpanded] = useState(false);
+  return (
+    <div>
+      <ClassicLink
+        onClick={() => { setIsExpanded(!isExpanded); }}
+      >
+        Shows
+      </ClassicLink>
+      {
+        isExpanded && (
+          <div>
+            This is a show
+          </div>
+        )
+      }
+    </div>
+  );
 }

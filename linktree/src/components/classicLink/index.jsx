@@ -5,6 +5,7 @@ export default function ClassicLink(props) {
   const {
     href,
     children,
+    onClick,
   } = props;
   return (
     <a
@@ -12,6 +13,7 @@ export default function ClassicLink(props) {
       href={href}
       rel="noopener noreferrer"
       target="_blank"
+      onClick={onClick}
     >
       {children}
     </a>
