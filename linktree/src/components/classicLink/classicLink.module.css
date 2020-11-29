@@ -4,19 +4,18 @@
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
     overflow: hidden;
     margin-bottom: 16px;
-    border: 2px solid rgb(0, 86, 137);
-    background-color: rgb(0, 86, 137);
-    color: rgb(255, 255, 255);
+    border: 2px solid var(--dark-blue);
+    background-color: var(--dark-blue);
+    color: var(--light);
     border-radius: 8px;
     display: inline-flex;
     justify-content: center;
     position: relative;
     padding: 16px 66px;
     cursor: pointer;
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
 .container:hover{
     background-color: transparent;
-    color: rgb(0, 86, 137);
-    border-color: rgb(0, 86, 137);
+    color: var(--dark-blue);
+    border-color: var(--dark-blue);
 }
