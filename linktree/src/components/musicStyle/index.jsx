@@ -1,5 +1,5 @@
-import React from "react"
+import React from 'react';
 
 export default function MusicStyle() {
-  return <div>I'm a Music Style Link</div>
+  return <div>I am a Music Style Link</div>;
 }

@@ -1,5 +1,5 @@
-import React from "react"
+import React from 'react';
 
 export default function ClassicLink() {
-  return <div>I'm a Classic Link</div>
+  return <div>I am a Classic Link</div>;
 }

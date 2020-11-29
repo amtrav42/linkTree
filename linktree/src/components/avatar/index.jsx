@@ -1,5 +1,5 @@
-import React from "react"
+import React from 'react';
 
 export default function Avatar() {
-  return <div>I'm an Avatar Image</div>
+  return <div>I am an Avatar Image</div>;
 }
