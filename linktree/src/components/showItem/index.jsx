@@ -15,8 +15,15 @@ export default function ShowItem(props) {
       rel="noopener noreferrer"
       target="_blank"
     >
-      {date}
-      {location}
+      <div className={showItemStyles.leftContent}>
+        <div>
+          {date}
+        </div>
+        <div>
+          {location}
+        </div>
+
+      </div>
       {isAvailable ? '>' : 'Sold Out'}
     </a>
   );

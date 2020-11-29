@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import ClassicLink from '../classicLink';
 import ShowItem from '../showItem';
+import showLinkStyles from './showsLink.module.css';
+
+// todo add in the scrollable functionality and max height
+// add in animation on hover of the chevron
+// make a booked out show not have a clickable looking hover State
+// add in songkick logo (non clickable?)
+// add in venue name
 
 export default function ShowsLink(props) {
   const {
@@ -8,7 +15,9 @@ export default function ShowsLink(props) {
   } = props;
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div>
+    <div
+      className={showLinkStyles.wrapper}
+    >
       <ClassicLink
         onClick={() => { setIsExpanded(!isExpanded); }}
       >
@@ -16,7 +25,9 @@ export default function ShowsLink(props) {
       </ClassicLink>
       {
         isExpanded && (
-          <div>
+          <div
+            className={showLinkStyles.wrapper}
+          >
             {
               showList.map((show) => (
                 <ShowItem

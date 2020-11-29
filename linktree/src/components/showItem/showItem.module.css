@@ -1,22 +1,28 @@
 @import "../../styles/global.css"; 
 
+/* Fix up colour contrast for accessability and aesthetics
+tidy up padding and borders, fix up padding and styling of font
+add in animation on hover of chevron
+fix alignment of chevron to be centered */
+
+
 .container{
     transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
     overflow: hidden;
-    margin-bottom: 16px;
-    border: 2px solid rgb(0, 86, 137);
-    background-color: rgb(0, 86, 137);
-    color: rgb(255, 255, 255);
-    border-radius: 8px;
+    border: 2px solid var(--bright-green);
+    background-color: var(--bright-green);
+    color: var(--dark-dark-blue);
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     padding: 16px 66px;
     cursor: pointer;
-    transition: box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s, background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
 }
 .container:hover{
     background-color: transparent;
-    color: rgb(0, 86, 137);
-    border-color: rgb(0, 86, 137);
+    color: var(--bright-green);
+    border-color: var(--bright-green);
+}
+.leftContent{
+    text-align: left;
 }

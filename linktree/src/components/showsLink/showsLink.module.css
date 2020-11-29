@@ -1,0 +1,8 @@
+/* consolidate css so as not to repeat homepage rules */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    width: 100%;
+    padding-bottom: 1em;
+}
